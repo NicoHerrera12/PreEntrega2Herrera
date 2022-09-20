@@ -112,6 +112,7 @@ ol, ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-animation:scale-in-center 0.5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center 0.5s cubic-bezier(.25,.46,.45,.94) both
 }
 .box__card:hover{
     box-shadow: 1px 0px 24px -6px rgba(0,0,0,1);
@@ -198,6 +199,9 @@ ol, ul{
     font-size: 2.5rem;
     color: #DF7356;
     transition: all 1.5s;
+}
+.rotate-center:hover{
+    -webkit-animation:rotate-center .6s ease-in-out both;animation:rotate-center .6s ease-in-out both
 }
 
 /* ---CATEGORIAS--- */
@@ -326,4 +330,5 @@ ol, ul{
         grid-column: 3/4;
         width: 60%;
     }
+    .scale-in-center{-webkit-animation:scale-in-center 1.5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center 1.5s cubic-bezier(.25,.46,.45,.94) both}
 }
